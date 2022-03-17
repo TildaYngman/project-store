@@ -1,9 +1,11 @@
 function Header() {
 
     return (
+    <main>
         <h1>
-            Hell Bitch!!
+            The Hichhikers Shop!
         </h1>
+    </main>
     )
 
 }
