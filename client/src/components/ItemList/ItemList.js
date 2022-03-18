@@ -1,4 +1,4 @@
-import { renderItemList } from "../../scripts/rendering";
+import { renderItemList } from "../../renderingItems";
 
 
 function ItemList(props) {

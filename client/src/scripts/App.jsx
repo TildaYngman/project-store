@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom";
-import './style.css';
+import '../styles/style.css';
 import {Home, Staff, BadURL404} from "./pages"
 
 function App() {
