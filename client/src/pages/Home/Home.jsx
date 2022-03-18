@@ -1,10 +1,12 @@
-import { Header, Navbar } from "../../components";
+import { useState, useEffect } from "react";
+import { Header, Navbar, ItemList } from "../../components";
 
-function Home() {
+function Home(props) {
     return (
         <>
             <Header />
             <Navbar />
+            <ItemList { ...props }/>
         </>
     )
 }
