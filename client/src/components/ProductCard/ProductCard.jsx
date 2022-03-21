@@ -2,7 +2,7 @@ const ProductCard = (props) => {
   return (
     <div className="product-container">
       <img
-        className="product-image"
+        className="product-container__image"
         src={props.image}
         alt="A pricture of the art work"
       />
