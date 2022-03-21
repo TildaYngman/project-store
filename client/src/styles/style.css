@@ -64,6 +64,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 2rem;
 }
 
 .navbar__list {
@@ -89,6 +90,11 @@
   margin: 2rem;
   color: #ffff;
   font-size: larger;
+}
+
+.navbar__list__link:hover, .navbar__list__link:focus {
+  color: hotpink;
+  text-decoration: underline;
 }
 
 .card-container {
