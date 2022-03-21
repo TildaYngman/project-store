@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {Routes, Route} from "react-router-dom";
 import {Home, Staff, BadURL404} from "./pages"
-import * as config from "./config.js";
+import * as config from "./config.jsx";
 
 function App() {
 

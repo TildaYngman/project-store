@@ -3,21 +3,20 @@ import { Header, Navbar, ItemList, ProductCard } from "../../components";
 
 function Home(props) {
     return (
-        <>
+        <div className="container">
             <Header />
             <Navbar />
-            {/* <ItemList { ...props }/> */}
-            <section>
+            <section className="card-container">
                 {props.items.map((props) => (
-                 <ProductCard
+                <ProductCard
                 key={props._id}
                 title={props.title}
                 image={props.image}
-                type={props.price}
+                price={props.price}
             />
         ))}
         </section>
-        </>
+        </div>
     )
 }
 

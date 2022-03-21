@@ -1,0 +1,17 @@
+.product-container {
+    width: 12vw;
+    height: 30vh;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 0.5rem #303253;
+    align-items: center;
+    color: rgb(48, 50, 83);
+    border-radius: 0.7em;
+}
+
+.product-container .product-image {
+    width: 10vw;
+}

@@ -1,9 +1,9 @@
 function Header() {
 
     return (
-    <main>
+    <main className="hero">
         <h1>
-            The Hichhikers Shop!
+            The Skii Shop!
         </h1>
     </main>
     )
