@@ -1,5 +1,6 @@
 import express from "express";
 import mongodb from "mongodb";
+import cors from "cors";
 
 const mongoClient = new mongodb.MongoClient('mongodb://localhost:27017');
 
@@ -10,6 +11,7 @@ const db = mongoClient.db('store');
 const collection = db.collection('items');
 
 const app = express();
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(express.json())
 
 const PORT = 8080;

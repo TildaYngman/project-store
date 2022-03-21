@@ -1,16 +1,16 @@
-import { renderItemList } from "../../renderingItems";
+// import { renderItemList } from "../../renderingItems";
 
 
-function ItemList(props) {
-    console.log(props)
+// function ItemList(props) {
+//     console.log(props)
 
-    let rows = renderItemList(props);
+//     let rows = renderItemList(props);
 
-    return (
-        <div id="item-list">
-            {rows}
-        </div>
-    );
-}
+//     return (
+//         <div id="item-list">
+//             {rows}
+//         </div>
+//     );
+// }
 
-export default ItemList;
+// export default ItemList;

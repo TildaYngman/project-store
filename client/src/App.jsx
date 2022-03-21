@@ -1,6 +1,5 @@
-import {Routes, Route} from "react-router-dom";
 import { useEffect, useState } from "react";
-import './styles/style.css';
+import {Routes, Route} from "react-router-dom";
 import {Home, Staff, BadURL404} from "./pages"
 import * as config from "./config.js";
 
@@ -29,7 +28,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home items={items} />} />
         <Route path="/staff" element={<Staff />}  />
         <Route path="*" element={<BadURL404 />}  />
       </Routes>
