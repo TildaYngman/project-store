@@ -1,8 +1,8 @@
-
 const ProductCard = (props) => {
   return (
-    <div>
+    <div className="product-container">
       <img
+        className="product-image"
         src={props.image}
         alt="A pricture of the art work"
       />
