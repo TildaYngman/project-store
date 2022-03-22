@@ -1,26 +1,31 @@
-@import '../components/ProductCard/ProductCard', '../components/Header/Header', '../components/Navbar/Navbar', '../pages/Home/Home', '../pages/Staff/Staff', '../pages/BadURL404/BadURL404';
+@import "../components/ProductCard/ProductCard", "../components/Header/Header",
+  "../components/Navbar/Navbar", "../pages/Home/Home", "../pages/Staff/Staff",
+  "../pages/BadURL404/BadURL404";
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital@1&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%; // 1rem = 10px
+  font-size: 62.5%; // 1rem = 10px
+  font-family: "Overpass", sans-serif;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

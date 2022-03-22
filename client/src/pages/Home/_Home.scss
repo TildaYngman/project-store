@@ -1,8 +1,11 @@
+.container {
+  width: 100vw;
+  height: auto;
 
-
-.card-container {
+  &__card-container {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 }

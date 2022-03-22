@@ -1,14 +1,17 @@
-.hero {
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+.navbar-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 
-.hero h1 {
+  &__logo {
+    height: 3rem;
     align-items: center;
     justify-content: center;
+    color: #ffff;
+  }
 }

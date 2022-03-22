@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { Header, Navbar, ItemList, ProductCard } from "../../components";
+import { Header, Navbar, ProductCard } from "../../components";
 
 function Home(props) {
     return (
         <div className="container">
             <Header />
-            <Navbar />
-            <section className="card-container">
+            <section className="container__card-container">
                 {props.items.map((props) => (
                 <ProductCard
                 key={props._id}
@@ -14,8 +13,8 @@ function Home(props) {
                 image={props.image}
                 price={props.price}
             />
-        ))}
-        </section>
+            ))}
+            </section>
         </div>
     )
 }

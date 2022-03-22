@@ -1,10 +1,13 @@
 .navbar {
   width: 100vw;
+  height: 4rem;
   margin: 0;
-  background-color: rgb(11, 11, 43);
+  background-color: #ffff;
   display: flex;
   flex-direction: row;
   font-size: 2rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 
   &__list {
     width: 100vw;
@@ -17,8 +20,9 @@
     &__link {
       text-decoration: none;
       margin: 2rem;
-      color: #ffff;
+      color: black;
       font-size: larger;
+
       &:hover,
       &:focus {
         color: hotpink;
