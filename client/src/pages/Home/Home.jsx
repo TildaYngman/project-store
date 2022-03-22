@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
-import { Header, Navbar, ProductCard } from "../../components";
+import { Header, ProductCard } from "../../components";
 
 function Home(props) {
     return (
-        <div className="container">
+        <div className="fp-container">
             <Header />
-            <section className="container__card-container">
+            <section className="fp-container__card-container">
                 {props.items.map((props) => (
                 <ProductCard
                 key={props._id}
                 title={props.title}
                 image={props.image}
                 price={props.price}
-            />
-            ))}
+            />))}
             </section>
         </div>
     )
