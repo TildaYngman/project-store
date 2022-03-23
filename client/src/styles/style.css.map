@@ -9,7 +9,8 @@
         "../pages/Home/_Home.scss",
         "../pages/Staff/_Staff.scss",
         "../pages/BadURL404/_BadURL404.scss",
-        "_variables.scss"
+        "_variables.scss",
+        "../components/SearchField/_searchfield.scss"
     ],
     "names": [],
     "file": "style.css"

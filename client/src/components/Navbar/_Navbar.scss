@@ -2,7 +2,7 @@
   width: 100vw;
   height: 4rem;
   margin: 0;
-  background-color: #ffff;
+  background-color: $primary-base-color;
   display: flex;
   flex-direction: row;
   font-size: 2rem;
@@ -20,12 +20,12 @@
     &__link {
       text-decoration: none;
       margin: 2rem;
-      color: black;
+      color: $primary-color;
       font-size: larger;
 
       &:hover,
       &:focus {
-        color: hotpink;
+        color: $active-link-color;
         text-decoration: underline;
       }
     }

@@ -6,12 +6,12 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #1d1f24;
+  background-color: $primary-color;
 
   &__logo {
     height: 3rem;
     align-items: center;
     justify-content: center;
-    color: #ffff;
+    color: $primary-base-colorffff;
   }
 }

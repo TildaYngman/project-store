@@ -1,6 +1,7 @@
 @import "../components/ProductCard/ProductCard", "../components/Header/Header",
   "../components/Navbar/Navbar", "../pages/Home/Home", "../pages/Staff/Staff",
-  "../pages/BadURL404/BadURL404", "./variables";
+  "../pages/BadURL404/BadURL404", "./variables",
+  "../components/SearchField/searchfield";
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital@1&display=swap");
 
@@ -20,6 +21,6 @@ body {
 
 html {
   font-size: 62.5%; // 1rem = 10px
-  color: #1d1f24;
+  color: $primary-color;
   font-family: "Overpass", sans-serif;
 }
