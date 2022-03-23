@@ -3,9 +3,9 @@ import { Header, ProductCard } from "../../components";
 
 function Home(props) {
     return (
-        <div className="fp-container">
+        <div id="fp-container">
             <Header />
-            <section className="fp-container__card-container">
+            <section className="item-list ">
                 {props.items.map((props) => (
                 <ProductCard
                 key={props._id}
