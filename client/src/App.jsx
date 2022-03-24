@@ -6,7 +6,6 @@ import * as config from "./config.jsx";
 function App() {
 
   const [items, setItems] = useState([]);
-  // const [filteredItems, setFilteredItems] = useState(null);
 
   useEffect(() => {
       fetch(`${config.API_BASE_URL}/items`, {
@@ -25,10 +24,12 @@ function App() {
       });
   }, []);
 
+  
+
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home items={items} />} />
+        <Route path="/" element={<Home items = { items } />} />
         <Route path="/staff" element={<Staff />}  />
         <Route path="*" element={<BadURL404 />}  />
       </Routes>

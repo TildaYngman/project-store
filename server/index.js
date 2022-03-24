@@ -12,7 +12,7 @@ const collection = db.collection('items');
 
 const app = express();
 app.use(cors({ origin: 'http://localhost:3000' }));
-app.use(express.json())
+app.use(express.json());
 
 const PORT = 8080;
 
@@ -24,10 +24,19 @@ app.post('/items', async (req, res) => {
 
 app.get("/items", async (request, response) => {
     const query = request.query;
-    
     const items = await collection.find(query).toArray();
-  
+    console.log(items);
     response.json(items);
+});
+
+app.get("/items/:query", async (request, response) => {
+    const query = request.params.query;
+    const items = await collection
+    .find({ title: { $regex: `${query}`, $options: 'i' } })
+    .toArray();
+    console.log(items);
+    response.status(200).json(items);
+
 });
 
 app.listen(PORT, () => {
