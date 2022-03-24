@@ -4,7 +4,7 @@ import * as config from "../../config";
 
 
 
-function Home(props) {
+function Home() {
     const [ query, setQuery ] = useState("");
     const [ items, setItems ] = useState([]);
     console.log(typeof query);
@@ -43,12 +43,12 @@ function Home(props) {
             < SearchField setQuery = { setQuery } />
             <section className="item-list ">
                 {items.length > 0 ? (
-                props.items.map((props) => (
+                items.map((item) => (
                 <ProductCard
-                key={props._id}
-                title={props.title}
-                image={props.image}
-                price={props.price}
+                key={item._id}
+                title={item.title}
+                image={item.image}
+                price={item.price}
             />))
             ):(<h2>does not exist</h2>)
         }
