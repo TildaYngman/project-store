@@ -1,7 +1,7 @@
-@import "../components/ProductCard/ProductCard", "../components/Header/Header",
-  "../components/Navbar/Navbar", "../pages/Home/Home", "../pages/Staff/Staff",
-  "../pages/BadURL404/BadURL404", "./variables",
-  "../components/SearchField/searchfield";
+@import "variables", "../components/ProductCard/ProductCard",
+  "../components/Header/Header", "../components/Navbar/Navbar",
+  "../pages/Home/Home", "../components/Cart/cart", "../pages/Staff/Staff",
+  "../pages/BadURL404/BadURL404", "../components/SearchField/searchfield";
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital@1&display=swap");
 

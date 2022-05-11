@@ -2,12 +2,12 @@ import { Navbar } from "../../components";
 
 function Header() {
     return (
-        <main className="navbar-container">
+        <div className="navbar-container">
             <h1 className="navbar-container__logo">
                 The Skii Shop!
             </h1>
             <Navbar />
-        </main>
+        </div>
     )
 }
 

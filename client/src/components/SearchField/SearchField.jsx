@@ -1,4 +1,3 @@
-import { HiShoppingCart } from "react-icons/hi";
 import { useState } from "react";
 
 const SearchField = ({ setQuery }) => {
@@ -19,7 +18,7 @@ const SearchField = ({ setQuery }) => {
         <input
         onChange = { handelOnChange }
         type = "text"
-        id = "search"
+        id = "search-field"
         placeholder ="Search"
         name ="search"
         value = {searchInput}

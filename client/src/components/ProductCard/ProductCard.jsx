@@ -1,6 +1,7 @@
 import { HiShoppingCart } from "react-icons/hi";
 
 const ProductCard = (props) => {
+  const { onAdd, items } = props;
   return (
     <div className="grid-item">
       <img
@@ -12,7 +13,7 @@ const ProductCard = (props) => {
       <p>{props.price ? props.price : ''}</p>
       <div>
         <button>Buy Now</button>
-        <button>Add To Cart<HiShoppingCart /></button>
+        <button>Add To Cart</button>
       </div>
     </div>
   );

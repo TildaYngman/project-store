@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {Routes, Route} from "react-router-dom";
 import {Home, Staff, BadURL404} from "./pages"
 
