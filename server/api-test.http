@@ -1,0 +1,17 @@
+### Adding item
+POST http://localhost:8080/items
+Content-Type: application/json
+
+{
+  "_id": "8",
+  "title": "Marker Duke PT 16",
+  "image": "https://freeskier.com/wp-content/uploads/2021/09/Marker-2.png",
+  "price": 7000,
+  "isAvailable": true,
+  "isPacked": false,
+  "isShipped": false,
+  "category": "binding"
+}
+
+### Getting items
+GET http://localhost:8080/items
