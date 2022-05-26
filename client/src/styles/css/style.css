@@ -88,7 +88,7 @@
   text-decoration: none;
   margin: 1rem;
   color: #1d1f24;
-  font-size: larger;
+  font-weight: bold;
 }
 
 .navbar__list__link:hover, .navbar__list__link:focus {
