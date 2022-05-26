@@ -6,7 +6,7 @@
   width: 100%;
   height: 50vh;
   padding: 1rem;
-  margin-left: 3rem;
+  max-width: 250px;
   grid-row: span 1;
   grid-column: span 1;
   -ms-grid-column-align: center;
@@ -119,20 +119,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #fp-main .item-list {
-  width: 50%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[2];
-      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(25rem, 1fr));
   gap: 3rem;
   margin: 6rem;
-}
-
-#fp-main .cart-container {
-  width: 50%;
 }
 
 body {

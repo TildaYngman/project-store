@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Header, ProductCard, SearchField, Cart } from "../../components";
+import { Header, ProductCard, SearchField } from "../../components";
 import * as config from "../../config";
 
 function Home() {
@@ -52,7 +52,6 @@ function Home() {
                 }
                 </div>
                 <div className="cart-container">
-                  <Cart />
                 </div>
             </div>   
         </main>
