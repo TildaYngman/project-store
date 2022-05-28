@@ -36,7 +36,7 @@ function Home() {
   return (
     <main id="fp-container">
       <Header />
-      <Cart cartItems={cartItems} setCartItems={setCartItems} items={items} setItems={setItems} />
+      <Cart cartItems={cartItems} setCartItems={setCartItems} items={items} />
       <SearchField setQuery={setQuery} />
 
       <div id="fp-main">
@@ -44,10 +44,9 @@ function Home() {
           {items.length > 0 ? (
             items.map((item) => (
               <ProductCard
-                key={item._id}
-                title={item.title}
-                image={item.image}
-                price={item.price}
+                cartItems={cartItems}
+                setCartItems={setCartItems}
+                item={item}
               />
             ))
           ) : (
