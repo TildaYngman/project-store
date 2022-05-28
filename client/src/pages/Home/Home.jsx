@@ -5,7 +5,7 @@ import * as config from "../../config";
 function Home() {
   const [query, setQuery] = useState("");
   const [items, setItems] = useState([]);
-  const [cartItems, setCartItems] = React.useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/items`)
@@ -36,7 +36,7 @@ function Home() {
   return (
     <main id="fp-container">
       <Header />
-      <Cart cartItems={cartItems} setCartItems={setCartItems} />
+      <Cart cartItems={cartItems} setCartItems={setCartItems} items={items} setItems={setItems} />
       <SearchField setQuery={setQuery} />
 
       <div id="fp-main">
