@@ -5,6 +5,7 @@ import * as config from "../../config";
 function Home() {
   const [query, setQuery] = useState("");
   const [items, setItems] = useState([]);
+  const [cartItems, setCartItems] = React.useState([]);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/items`)
@@ -35,7 +36,7 @@ function Home() {
   return (
     <main id="fp-container">
       <Header />
-      <Cart />
+      <Cart cartItems={cartItems} setCartItems={setCartItems} />
       <SearchField setQuery={setQuery} />
 
       <div id="fp-main">
