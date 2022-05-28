@@ -1,20 +1,17 @@
-@media screen and (max-width: 650px) {
-}
-
 @media only screen and (min-width: 600px) {
   #fp-main .item-list {
-    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    grid-template-columns: auto auto;
   }
 }
 
 @media only screen and (min-width: 768px) {
   #fp-main .item-list {
-    grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    grid-template-columns: auto auto auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
   #fp-main .item-list {
-    grid-template-columns: repeat(4, minmax(25rem, 1fr));
+    grid-template-columns: auto auto auto auto;
   }
 }

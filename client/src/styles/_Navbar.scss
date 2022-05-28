@@ -31,9 +31,11 @@
     }
   }
 
-  &__cart-icon {
+  &__cart-btn {
     margin-right: 1.5rem;
     display: flex;
     align-items: center;
+    border: none;
+    background-color: $primary-base-color;
   }
 }

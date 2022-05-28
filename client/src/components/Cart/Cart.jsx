@@ -1,8 +1,12 @@
 function Cart() {
   return (
-    <div className="cart-container">
-      <h1 className="cart-container__logo">Cart</h1>
-    </div>
+    <section id="cart-container" className="hidden">
+      <div className="full-overlay">
+        <div className="cart-item">
+          <h1>Your shopping cart</h1>
+        </div>
+      </div>
+    </section>
   );
 }
 

@@ -14,7 +14,8 @@
   .item-list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, minmax(25rem, 1fr));
+    grid-template-columns: auto;
+    grid-gap: 20px;
     gap: 0.5rem;
     margin: 1rem;
   }

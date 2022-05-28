@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
 
 function Navbar() {
+  const handleClick = () => {
+    document.getElementById("cart-container").classList.toggle("hidden");
+    console.log(document.getElementById("cart-container").classList);
+  };
   return (
     <nav className="navbar">
       <ul className="navbar__list">
@@ -21,9 +25,9 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-      <section className="navbar__cart-icon">
+      <button className="navbar__cart-btn" onClick={handleClick}>
         <BsCart2 size={25} />
-      </section>
+      </button>
     </nav>
   );
 }
