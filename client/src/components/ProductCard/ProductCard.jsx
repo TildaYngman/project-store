@@ -1,5 +1,5 @@
 import { HiShoppingCart } from "react-icons/hi";
-import { addItemToCart, removeItemFromCart } from "../../scripts/tools";
+import { addItemToCart } from "../../scripts/tools";
 
 const ProductCard = ({ item, cartItems, setCartItems }) => {
   return (

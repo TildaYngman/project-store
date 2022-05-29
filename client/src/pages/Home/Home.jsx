@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Header, ProductCard, SearchField, Cart } from "../../components";
-import * as config from "../../config";
+import { fetchAllItems, fetchQueryItems } from "../../scripts/api";
 
 function Home() {
   const [query, setQuery] = useState("");
@@ -8,35 +8,13 @@ function Home() {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    fetch(`${config.API_BASE_URL}/items`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((result) => {
-        setItems(result);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, [query]);
-
-  useEffect(() => {
-    fetch(`${config.API_BASE_URL}/items/${query}`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((result) => {
-        setItems(result);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+    fetchQueryItems(query, setItems);
   }, [query]);
 
   return (
     <main id="fp-container">
       <Header />
-      <Cart cartItems={cartItems} setCartItems={setCartItems} items={items} />
+      <Cart cartItems={cartItems} setCartItems={setCartItems} />
       <SearchField setQuery={setQuery} />
 
       <div id="fp-main">
