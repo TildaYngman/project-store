@@ -4,7 +4,6 @@ import { BsCart2 } from "react-icons/bs";
 function Navbar() {
   const handleClick = () => {
     document.getElementById("cart-container").classList.toggle("hidden");
-    console.log(document.getElementById("cart-container").classList);
   };
   return (
     <nav className="navbar">
