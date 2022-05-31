@@ -54,6 +54,9 @@ function Cart({ cartItems, setCartItems }) {
           )}
         </div>
         <div className="text-center my-6">Total: {totalPrice}SEK</div>
+        <div>
+          <button>Place Order</button>
+        </div>
       </div>
     </section>
   );
