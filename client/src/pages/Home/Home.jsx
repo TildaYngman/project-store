@@ -18,14 +18,16 @@ function Home() {
       <SearchField setQuery={setQuery} />
 
       <div id="fp-main">
-        <div className="item-list ">
+        <div className="item-list">
           {items.length > 0 ? (
             items.map((item) => (
-              <ProductCard
-                cartItems={cartItems}
-                setCartItems={setCartItems}
-                item={item}
-              />
+              <div className="item-list" key={`product${item._id}`}>
+                <ProductCard
+                  cartItems={cartItems}
+                  setCartItems={setCartItems}
+                  item={item}
+                />
+              </div>
             ))
           ) : (
             <h2>does not exist</h2>

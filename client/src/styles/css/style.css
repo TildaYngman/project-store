@@ -1,20 +1,29 @@
-#search-field {
-  margin-left: 2rem;
+.search-field {
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 .grid-item {
   width: 21rem;
   height: 33rem;
-  padding: 1rem;
+  padding: 2rem;
   max-width: 250px;
   grid-row: span 1;
   grid-column: span 1;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 1rem;
   -webkit-box-shadow: 0 0 1rem #1d1f24;
           box-shadow: 0 0 1rem #1d1f24;
@@ -31,6 +40,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .grid-item__btn-container {
@@ -38,9 +48,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
 }
 
@@ -63,8 +73,8 @@
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 2rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
 }
 
 .navbar__list {
@@ -141,7 +151,7 @@
   color: #ffff;
 }
 
-.full-overlay {
+.cart-content {
   position: static;
   width: 100vw;
   height: auto;
@@ -152,9 +162,58 @@
   border-radius: 20px 20px 0 0;
   background-color: #1d1f24;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #ffff;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.cart-content__info-container {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  background-color: #ffff;
+  color: #1d1f24;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-content__img {
+  width: 6rem;
+}
+
+.cart-content__btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cart-content__btn {
+  background-color: #ffff;
+  border: none;
 }
 
 .hidden {
@@ -168,7 +227,7 @@
 }
 
 #fp-main {
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +235,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
@@ -187,15 +249,27 @@
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  grid-gap: 20px;
-  gap: 0.5rem;
-  margin: 1rem;
+  grid-gap: 1rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
   #fp-main .item-list {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar__list {
+    margin-left: 5rem;
+  }
+  .navbar__cart-btn {
+    margin-right: 5rem;
+  }
+  .search-field {
+    margin-top: 2rem;
+    margin-left: 6rem;
   }
 }
 
@@ -203,6 +277,9 @@
   #fp-main .item-list {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -210,6 +287,9 @@
   #fp-main .item-list {
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

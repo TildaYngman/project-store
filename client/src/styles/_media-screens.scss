@@ -1,17 +1,35 @@
 @media only screen and (min-width: 600px) {
   #fp-main .item-list {
     grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .navbar {
+    &__list {
+      margin-left: 5rem;
+    }
+
+    &__cart-btn {
+      margin-right: 5rem;
+    }
+  }
+
+  .search-field {
+    margin-top: 2rem;
+    margin-left: 6rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   #fp-main .item-list {
     grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 }
 
 @media only screen and (min-width: 992px) {
   #fp-main .item-list {
     grid-template-columns: auto auto auto auto;
+    justify-content: center;
   }
 }
